@@ -1,0 +1,135 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#map {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 60%;	/* 60% of viewport width */
+	height: 100vh;	/* 100% of viewport height */
+}
+
+/* Modal styles */
+#screen {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.6;
+    z-index: 1;
+    display: none;
+}
+
+.modal {
+    display: none;
+    width: 50vw;
+    height: 50vh;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom:0;
+    left: 0;
+    right: 0;
+    background-color: white;
+    z-index: 2;
+    padding: 30px;
+    font-family: Courier;
+}
+
+.modal>.modal-title {
+    
+}
+
+.modal>.modal-body{
+   
+}
+
+.modal>.close-button {
+    color: #cccccc;
+    position:absolute;
+    right: 0;
+    top: 0;
+    margin: 10px;
+    background: none !important;
+    border: none !important;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.modal>.close-button:hover {
+    color: #bbbbbb !important;
+}
+
+.button-default {
+    background-color: deeppink;
+    border-radius: 10px;
+    color: white;
+    padding: 10px 20px;
+    font-family: Courier;
+    cursor: pointer;
+    margin: 20px;
+    border: none;
+    font-size: 18px;
+    z-index: 1;
+}
+
+.button-default:hover {
+    background-color: mediumvioletred;
+}
+
+#about {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.map-overlay {
+    position: absolute;
+    font-family: Courier;
+    z-index: 1;
+}
+
+#legend {
+    bottom: 0;
+    left: 0;
+    background-color: rgba(255,255,255,0.8);
+    margin: 20px;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.legend-key {
+    display: inline-block;
+    border-radius:100%;
+    width:10px;
+    height: 10px;
+    margin-right: 5px;
+}
+#info-window {
+    top: 0;
+    right: 0;
+    width: 40%;
+    height: 100vh;
+    background-color: deeppink;
+}
+
+#info-window>div {
+    padding: 15px;
+}
+
+.mapboxgl-popup-content {
+    font-family: Courier;
+    background-color: rgba(255, 174, 218, 0.9);
+}
+.mapboxgl-popup-tip {
+    border-top-color: rgba(255, 174, 218, 0.9) !important;
+}
+
+.park-image {
+    width: 200px;
+    height: 200px;
+}
