@@ -338,3 +338,4 @@ for (i=0; i<layers.length; i++) {
         });
     });
 
+// adding some newcomments here
